@@ -1,6 +1,7 @@
 $(function() {
 
-var dataFromDocument = location.hash.replace(/#/, "");
+//var dataFromDocument = location.hash.replace(/#/, "");
+var dataFromDocument = "logo";
 
 var jsonPath = "./json/" + dataFromDocument + ".json";
 
