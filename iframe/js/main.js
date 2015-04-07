@@ -1,15 +1,8 @@
 $(function() {
 
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(window.parent.document.location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
+var dataFromDocument = location.hash.replace(/#/, "");
 
-// window.parent.document doesn't make it past iframe access boundary.
-// var jsonPath = "./json/" + getParameterByName("sketch") + ".json";
-var jsonPath = "./json/" + "logo" + ".json";
+var jsonPath = "./json/" + dataFromDocument + ".json";
 
 $(".sketch").
 		WSP("loadSketch", {
