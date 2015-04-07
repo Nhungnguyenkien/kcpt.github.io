@@ -9,7 +9,7 @@ function getParameterByName(name) {
 
 // window.parent.document doesn't make it past iframe access boundary.
 // var jsonPath = "./json/" + getParameterByName("sketch") + ".json";
-var jsonPath = "./json/" + "sketch" + ".json";
+var jsonPath = "./json/" + "logo" + ".json";
 
 $(".sketch").
 		WSP("loadSketch", {
