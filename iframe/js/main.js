@@ -7,7 +7,9 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-var jsonPath = "./json/" + getParameterByName("sketch") + ".json";
+// window.parent.document doesn't make it past iframe access boundary.
+// var jsonPath = "./json/" + getParameterByName("sketch") + ".json";
+var jsonPath = "./json/" + "sketch" + ".json";
 
 $(".sketch").
 		WSP("loadSketch", {
