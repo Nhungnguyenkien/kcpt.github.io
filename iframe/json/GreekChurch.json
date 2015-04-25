@@ -1,0 +1,1950 @@
+{
+  "metadata": {
+    "width": 655,
+    "height": 711,
+    "wsp-version": "4.1.0",
+    "wsp-build-number": "838",
+    "wsp-build-stamp": "sneferu.local/20150421100449",
+    "exporter-version": "5.03A2011(dev)",
+    "exporter-build": "2011(dev)",
+    "exporter-debug": true,
+    "original-document-name": "GreekChurch.gsp",
+    "start-page": "1"
+  },
+  "resources": {
+    "fontList": [
+      "\"Baskerville Italic\", sans-serif",
+      "\"Arial\", sans-serif"
+    ]
+  },
+  "pages": [
+    {
+      "metadata": {
+        "title": "Decagon",
+        "id": "1",
+        "sketchRect": {
+          "top": 0,
+          "left": 0,
+          "bottom": 711,
+          "right": 655
+        }
+      },
+      "preferences": {
+        "units": {
+          "length": "cm",
+          "angle": "deg"
+        },
+        "precision": {
+          "length": 2,
+          "angle": 2,
+          "scalar": 2
+        },
+        "colorableComponents": {
+          "ActionButton": {
+            "color": "rgb(255,128,0)"
+          }
+        },
+        "text": {
+          "mathItalicization": true,
+          "textTypes": {
+            "Label": {
+              "font-family": "\"Baskerville Italic\", sans-serif"
+            },
+            "Caption": {
+              "font-family": "\"Arial\", sans-serif"
+            },
+            "Measurement": {
+              "font-family": "\"Times\", sans-serif"
+            },
+            "Action": {
+              "label": {
+                "font-family": "\"Arial\", sans-serif",
+                "font-size": 18
+              }
+            },
+            "Table": {
+              "font-family": "\"Arial\", sans-serif"
+            },
+            "AxisTicksAndOptionalLabel": {
+              "font-family": "\"Geneva\", sans-serif"
+            }
+          }
+        }
+      },
+      "objects": {
+        "1": {
+          "kind": "Point",
+          "genus": "Point",
+          "constraint": "Free",
+          "geom": {
+            "loc": {
+              "x": 252,
+              "y": 542
+            }
+          },
+          "label": "A",
+          "style": {
+            "label": {
+              "showLabel": true,
+              "labelOffsetX": -27,
+              "labelOffsetY": -14
+            }
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 252,
+              "y": 542
+            },
+            "labelOrigin": {
+              "x": 225,
+              "y": 528
+            }
+          }
+        },
+        "2": {
+          "kind": "Point",
+          "genus": "Point",
+          "constraint": "Free",
+          "geom": {
+            "loc": {
+              "x": 382,
+              "y": 543
+            }
+          },
+          "label": "B",
+          "style": {
+            "label": {
+              "showLabel": true,
+              "labelOffsetX": 8,
+              "labelOffsetY": -13
+            }
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 382,
+              "y": 543
+            },
+            "labelOrigin": {
+              "x": 390,
+              "y": 530
+            }
+          }
+        },
+        "3": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "1",
+            "p1": "2"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 252,
+              "y": 542
+            },
+            "p1": {
+              "x": 382,
+              "y": 543
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 252,
+                "y": 542
+              },
+              "zeroDerivative": {
+                "x": 130,
+                "y": 1
+              },
+              "middlePosition": {
+                "x": 317,
+                "y": 542.5
+              },
+              "middleDerivative": {
+                "x": 130,
+                "y": 1
+              },
+              "onePosition": {
+                "x": 382,
+                "y": 543
+              },
+              "oneDerivative": {
+                "x": 130,
+                "y": 1
+              }
+            }
+          }
+        },
+        "4": {
+          "kind": "Straight",
+          "genus": "Perpendicular",
+          "parents": {
+            "p0": "1",
+            "line": "3"
+          },
+          "constraint": "Perpendicular",
+          "style": {
+            "hidden": true,
+            "line-style": "dashed"
+          },
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 252.5,
+              "y": 477
+            },
+            "p1": {
+              "x": 251.5,
+              "y": 607
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 252.5,
+                "y": 477
+              },
+              "zeroDerivative": {
+                "x": -1,
+                "y": 130
+              },
+              "middlePosition": {
+                "x": 252,
+                "y": 542
+              },
+              "middleDerivative": {
+                "x": -1,
+                "y": 130
+              },
+              "onePosition": {
+                "x": 251.5,
+                "y": 607
+              },
+              "oneDerivative": {
+                "x": -1,
+                "y": 130
+              }
+            }
+          }
+        },
+        "5": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "1",
+            "p1": "2"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 252,
+              "y": 542
+            },
+            "r": 130.00384609695206,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 382.0038460969521,
+                "y": 542
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695206
+              },
+              "middlePosition": {
+                "x": 121.99615390304794,
+                "y": 542.0000000000009
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947745e-14,
+                "y": 130.00384609695206
+              },
+              "onePosition": {
+                "x": 382.0038460969521,
+                "y": 542
+              },
+              "oneDerivative": {
+                "x": 3.184175879989549e-14,
+                "y": -130.00384609695206
+              }
+            }
+          }
+        },
+        "6": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "4",
+            "circle": "5"
+          },
+          "constraint": "Intersection1",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 252.99999999999997,
+              "y": 412.0000000000002
+            }
+          }
+        },
+        "7": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "4",
+            "circle": "5"
+          },
+          "constraint": "Intersection2",
+          "label": "C",
+          "style": {
+            "hidden": true,
+            "label": {
+              "showLabel": true,
+              "labelOffsetX": 3,
+              "labelOffsetY": 0
+            }
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 250.99999999999997,
+              "y": 671.9999999999997
+            },
+            "labelOrigin": {
+              "x": 251,
+              "y": 672
+            }
+          }
+        },
+        "8": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "7",
+            "p1": "1"
+          },
+          "constraint": "Segment",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 250.99999999999997,
+              "y": 671.9999999999997
+            },
+            "p1": {
+              "x": 252,
+              "y": 542
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 250.99999999999997,
+                "y": 671.9999999999997
+              },
+              "zeroDerivative": {
+                "x": 1.0000000000000284,
+                "y": -129.99999999999966
+              },
+              "middlePosition": {
+                "x": 251.5,
+                "y": 606.9999999999998
+              },
+              "middleDerivative": {
+                "x": 1.0000000000000284,
+                "y": -129.99999999999966
+              },
+              "onePosition": {
+                "x": 252,
+                "y": 542
+              },
+              "oneDerivative": {
+                "x": 1.0000000000000284,
+                "y": -129.99999999999966
+              }
+            }
+          }
+        },
+        "9": {
+          "kind": "Point",
+          "genus": "Midpoint",
+          "parents": {
+            "path": "8"
+          },
+          "constraint": "Midpoint",
+          "label": "D",
+          "style": {
+            "hidden": true,
+            "label": {
+              "showLabel": true,
+              "labelOffsetX": 8,
+              "labelOffsetY": -13
+            }
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 251.5,
+              "y": 606.9999999999998
+            },
+            "labelOrigin": {
+              "x": 252,
+              "y": 607
+            }
+          }
+        },
+        "10": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "9",
+            "p1": "2"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 251.5,
+              "y": 606.9999999999998
+            },
+            "r": 145.34871860460268,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 396.8487186046027,
+                "y": 606.9999999999998
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -145.34871860460268
+              },
+              "middlePosition": {
+                "x": 106.15128139539732,
+                "y": 607.0000000000008
+              },
+              "middleDerivative": {
+                "x": -1.7800084299929603e-14,
+                "y": 145.34871860460268
+              },
+              "onePosition": {
+                "x": 396.8487186046027,
+                "y": 606.9999999999998
+              },
+              "oneDerivative": {
+                "x": 3.5600168599859206e-14,
+                "y": -145.34871860460268
+              }
+            }
+          }
+        },
+        "11": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "4",
+            "circle": "10"
+          },
+          "constraint": "Intersection1",
+          "label": "E",
+          "style": {
+            "hidden": true,
+            "label": {
+              "showLabel": true,
+              "labelOffsetX": 3,
+              "labelOffsetY": -27
+            }
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 252.6180339887499,
+              "y": 461.65558146251334
+            },
+            "labelOrigin": {
+              "x": 253,
+              "y": 462
+            }
+          }
+        },
+        "12": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "2",
+            "p1": "11"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 382,
+              "y": 543
+            },
+            "r": 152.82868695417784,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 534.8286869541778,
+                "y": 543
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -152.82868695417784
+              },
+              "middlePosition": {
+                "x": 229.17131304582216,
+                "y": 543.000000000001
+              },
+              "middleDerivative": {
+                "x": -1.8716116229632676e-14,
+                "y": 152.82868695417784
+              },
+              "onePosition": {
+                "x": 534.8286869541778,
+                "y": 543
+              },
+              "oneDerivative": {
+                "x": 3.743223245926535e-14,
+                "y": -152.82868695417784
+              }
+            }
+          }
+        },
+        "13": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "12",
+            "circle": "5"
+          },
+          "constraint": "Intersection2",
+          "label": "F",
+          "style": {
+            "hidden": true,
+            "label": {
+              "showLabel": true,
+              "labelOffsetX": -11,
+              "labelOffsetY": -32
+            }
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 293.1232657850381,
+              "y": 418.6716698760049
+            },
+            "labelOrigin": {
+              "x": 293,
+              "y": 419
+            }
+          }
+        },
+        "14": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "13",
+            "p1": "2"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 293.1232657850381,
+              "y": 418.6716698760049
+            },
+            "r": 152.82868695417784,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 445.9519527392159,
+                "y": 418.6716698760049
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -152.82868695417784
+              },
+              "middlePosition": {
+                "x": 140.29457883086025,
+                "y": 418.671669876006
+              },
+              "middleDerivative": {
+                "x": -1.8716116229632676e-14,
+                "y": 152.82868695417784
+              },
+              "onePosition": {
+                "x": 445.9519527392159,
+                "y": 418.6716698760049
+              },
+              "oneDerivative": {
+                "x": 3.743223245926535e-14,
+                "y": -152.82868695417784
+              }
+            }
+          }
+        },
+        "15": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "14",
+            "circle": "12"
+          },
+          "constraint": "Intersection1",
+          "label": "G",
+          "style": {
+            "hidden": true,
+            "label": {
+              "showLabel": true,
+              "labelOffsetX": 4,
+              "labelOffsetY": -24
+            }
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 445.2331251899969,
+              "y": 403.8663253024478
+            },
+            "labelOrigin": {
+              "x": 445,
+              "y": 404
+            }
+          }
+        },
+        "16": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "15",
+            "p1": "1"
+          },
+          "constraint": "Segment",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 445.2331251899969,
+              "y": 403.8663253024478
+            },
+            "p1": {
+              "x": 252,
+              "y": 542
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 445.2331251899969,
+                "y": 403.8663253024478
+              },
+              "zeroDerivative": {
+                "x": -193.23312518999688,
+                "y": 138.13367469755218
+              },
+              "middlePosition": {
+                "x": 348.6165625949984,
+                "y": 472.93316265122394
+              },
+              "middleDerivative": {
+                "x": -193.23312518999688,
+                "y": 138.13367469755218
+              },
+              "onePosition": {
+                "x": 252,
+                "y": 542
+              },
+              "oneDerivative": {
+                "x": -193.23312518999688,
+                "y": 138.13367469755218
+              }
+            }
+          }
+        },
+        "17": {
+          "kind": "Straight",
+          "genus": "Parallel",
+          "parents": {
+            "p0": "2",
+            "line": "16"
+          },
+          "constraint": "Parallel",
+          "style": {
+            "hidden": true,
+            "line-style": "dashed"
+          },
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 478.6165625949984,
+              "y": 473.93316265122394
+            },
+            "p1": {
+              "x": 285.3834374050016,
+              "y": 612.0668373487761
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 478.6165625949984,
+                "y": 473.93316265122394
+              },
+              "zeroDerivative": {
+                "x": -193.23312518999683,
+                "y": 138.13367469755212
+              },
+              "middlePosition": {
+                "x": 382,
+                "y": 543
+              },
+              "middleDerivative": {
+                "x": -193.23312518999683,
+                "y": 138.13367469755212
+              },
+              "onePosition": {
+                "x": 285.3834374050016,
+                "y": 612.0668373487761
+              },
+              "oneDerivative": {
+                "x": -193.23312518999683,
+                "y": 138.13367469755212
+              }
+            }
+          }
+        },
+        "18": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "2",
+            "p1": "1"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 382,
+              "y": 543
+            },
+            "r": 130.00384609695206,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 512.0038460969521,
+                "y": 543
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695206
+              },
+              "middlePosition": {
+                "x": 251.99615390304794,
+                "y": 543.0000000000009
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947745e-14,
+                "y": 130.00384609695206
+              },
+              "onePosition": {
+                "x": 512.0038460969521,
+                "y": 543
+              },
+              "oneDerivative": {
+                "x": 3.184175879989549e-14,
+                "y": -130.00384609695206
+              }
+            }
+          }
+        },
+        "19": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "17",
+            "circle": "18"
+          },
+          "constraint": "Intersection1",
+          "label": "H",
+          "style": {
+            "label": {
+              "showLabel": true,
+              "labelOffsetX": 8,
+              "labelOffsetY": -11
+            }
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 487.7599945210355,
+              "y": 467.39693419635336
+            },
+            "labelOrigin": {
+              "x": 496,
+              "y": 456
+            }
+          }
+        },
+        "20": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "2",
+            "p1": "19"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 382,
+              "y": 543
+            },
+            "p1": {
+              "x": 487.7599945210355,
+              "y": 467.39693419635336
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 382,
+                "y": 543
+              },
+              "zeroDerivative": {
+                "x": 105.75999452103548,
+                "y": -75.60306580364664
+              },
+              "middlePosition": {
+                "x": 434.8799972605177,
+                "y": 505.1984670981767
+              },
+              "middleDerivative": {
+                "x": 105.75999452103548,
+                "y": -75.60306580364664
+              },
+              "onePosition": {
+                "x": 487.7599945210355,
+                "y": 467.39693419635336
+              },
+              "oneDerivative": {
+                "x": 105.75999452103548,
+                "y": -75.60306580364664
+              }
+            }
+          }
+        },
+        "21": {
+          "kind": "Point",
+          "genus": "Midpoint",
+          "parents": {
+            "path": "3"
+          },
+          "constraint": "Midpoint",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 317,
+              "y": 542.5
+            }
+          }
+        },
+        "22": {
+          "kind": "Straight",
+          "genus": "Perpendicular",
+          "parents": {
+            "p0": "21",
+            "line": "3"
+          },
+          "constraint": "Perpendicular",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 317.5,
+              "y": 477.5
+            },
+            "p1": {
+              "x": 316.5,
+              "y": 607.5
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 317.5,
+                "y": 477.5
+              },
+              "zeroDerivative": {
+                "x": -1,
+                "y": 130
+              },
+              "middlePosition": {
+                "x": 317,
+                "y": 542.5
+              },
+              "middleDerivative": {
+                "x": -1,
+                "y": 130
+              },
+              "onePosition": {
+                "x": 316.5,
+                "y": 607.5
+              },
+              "oneDerivative": {
+                "x": -1,
+                "y": 130
+              }
+            }
+          }
+        },
+        "23": {
+          "kind": "Point",
+          "genus": "Midpoint",
+          "parents": {
+            "path": "20"
+          },
+          "constraint": "Midpoint",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 434.8799972605177,
+              "y": 505.1984670981767
+            }
+          }
+        },
+        "24": {
+          "kind": "Straight",
+          "genus": "Perpendicular",
+          "parents": {
+            "p0": "23",
+            "line": "20"
+          },
+          "constraint": "Perpendicular",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 397.0784643586944,
+              "y": 452.318469837659
+            },
+            "p1": {
+              "x": 472.68153016234106,
+              "y": 558.0784643586944
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 397.0784643586944,
+                "y": 452.318469837659
+              },
+              "zeroDerivative": {
+                "x": 75.60306580364664,
+                "y": 105.75999452103542
+              },
+              "middlePosition": {
+                "x": 434.8799972605177,
+                "y": 505.1984670981767
+              },
+              "middleDerivative": {
+                "x": 75.60306580364664,
+                "y": 105.75999452103542
+              },
+              "onePosition": {
+                "x": 472.68153016234106,
+                "y": 558.0784643586944
+              },
+              "oneDerivative": {
+                "x": 75.60306580364664,
+                "y": 105.75999452103542
+              }
+            }
+          }
+        },
+        "25": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "line0": "22",
+            "line1": "24"
+          },
+          "constraint": "Intersection",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 318.53884176858764,
+              "y": 342.45057008360914
+            }
+          }
+        },
+        "26": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "25",
+            "p1": "1"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 318.53884176858764,
+              "y": 342.45057008360914
+            },
+            "r": 210.35064165307824,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 528.8894834216659,
+                "y": 342.45057008360914
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -210.35064165307824
+              },
+              "middlePosition": {
+                "x": 108.1882001155094,
+                "y": 342.4505700836106
+              },
+              "middleDerivative": {
+                "x": -2.5760523999903417e-14,
+                "y": 210.35064165307824
+              },
+              "onePosition": {
+                "x": 528.8894834216659,
+                "y": 342.45057008360914
+              },
+              "oneDerivative": {
+                "x": 5.1521047999806835e-14,
+                "y": -210.35064165307824
+              }
+            }
+          }
+        },
+        "27": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "19",
+            "p1": "2"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 487.7599945210355,
+              "y": 467.39693419635336
+            },
+            "r": 130.00384609695197,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 617.7638406179874,
+                "y": 467.39693419635336
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695197
+              },
+              "middlePosition": {
+                "x": 357.7561484240835,
+                "y": 467.39693419635427
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947736e-14,
+                "y": 130.00384609695197
+              },
+              "onePosition": {
+                "x": 617.7638406179874,
+                "y": 467.39693419635336
+              },
+              "oneDerivative": {
+                "x": 3.184175879989547e-14,
+                "y": -130.00384609695197
+              }
+            }
+          }
+        },
+        "28": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "27",
+            "circle": "26"
+          },
+          "constraint": "Intersection2",
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 528.8832603060735,
+              "y": 344.0686040723583
+            }
+          }
+        },
+        "29": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "28",
+            "p1": "19"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 528.8832603060735,
+              "y": 344.0686040723583
+            },
+            "r": 130.00384609695197,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 658.8871064030254,
+                "y": 344.0686040723583
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695197
+              },
+              "middlePosition": {
+                "x": 398.8794142091215,
+                "y": 344.0686040723592
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947736e-14,
+                "y": 130.00384609695197
+              },
+              "onePosition": {
+                "x": 658.8871064030254,
+                "y": 344.0686040723583
+              },
+              "oneDerivative": {
+                "x": 3.184175879989547e-14,
+                "y": -130.00384609695197
+              }
+            }
+          }
+        },
+        "30": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "29",
+            "circle": "26"
+          },
+          "constraint": "Intersection2",
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 489.66210755362494,
+              "y": 220.12223995961367
+            }
+          }
+        },
+        "31": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "30",
+            "p1": "28"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 489.66210755362494,
+              "y": 220.12223995961367
+            },
+            "r": 130.00384609695197,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 619.665953650577,
+                "y": 220.12223995961367
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695197
+              },
+              "middlePosition": {
+                "x": 359.65826145667296,
+                "y": 220.12223995961457
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947736e-14,
+                "y": 130.00384609695197
+              },
+              "onePosition": {
+                "x": 619.665953650577,
+                "y": 220.12223995961367
+              },
+              "oneDerivative": {
+                "x": 3.184175879989547e-14,
+                "y": -130.00384609695197
+              }
+            }
+          }
+        },
+        "32": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "31",
+            "circle": "26"
+          },
+          "constraint": "Intersection2",
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 385.0776835371739,
+              "y": 142.90114016721782
+            }
+          }
+        },
+        "33": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "32",
+            "p1": "30"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 385.0776835371739,
+              "y": 142.90114016721782
+            },
+            "r": 130.00384609695195,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 515.0815296341259,
+                "y": 142.90114016721782
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695195
+              },
+              "middlePosition": {
+                "x": 255.07383744022198,
+                "y": 142.90114016721873
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947733e-14,
+                "y": 130.00384609695195
+              },
+              "onePosition": {
+                "x": 515.0815296341259,
+                "y": 142.90114016721782
+              },
+              "oneDerivative": {
+                "x": 3.1841758799895465e-14,
+                "y": -130.00384609695195
+              }
+            }
+          }
+        },
+        "34": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "33",
+            "circle": "26"
+          },
+          "constraint": "Intersection2",
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 255.07768353717404,
+              "y": 141.90114016721864
+            }
+          }
+        },
+        "35": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "34",
+            "p1": "32"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 255.07768353717404,
+              "y": 141.90114016721864
+            },
+            "r": 130.00384609695195,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 385.081529634126,
+                "y": 141.90114016721864
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695195
+              },
+              "middlePosition": {
+                "x": 125.07383744022209,
+                "y": 141.90114016721955
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947733e-14,
+                "y": 130.00384609695195
+              },
+              "onePosition": {
+                "x": 385.081529634126,
+                "y": 141.90114016721864
+              },
+              "oneDerivative": {
+                "x": 3.1841758799895465e-14,
+                "y": -130.00384609695195
+              }
+            }
+          }
+        },
+        "36": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "35",
+            "circle": "26"
+          },
+          "constraint": "Intersection2",
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 149.317689016139,
+              "y": 217.50420597086594
+            }
+          }
+        },
+        "37": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "36",
+            "p1": "34"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 149.317689016139,
+              "y": 217.50420597086594
+            },
+            "r": 130.003846096952,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 279.32153511309104,
+                "y": 217.50420597086594
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.003846096952
+              },
+              "middlePosition": {
+                "x": 19.31384291918701,
+                "y": 217.50420597086685
+              },
+              "middleDerivative": {
+                "x": -1.592087939994774e-14,
+                "y": 130.003846096952
+              },
+              "onePosition": {
+                "x": 279.32153511309104,
+                "y": 217.50420597086594
+              },
+              "oneDerivative": {
+                "x": 3.184175879989548e-14,
+                "y": -130.003846096952
+              }
+            }
+          }
+        },
+        "38": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "37",
+            "circle": "26"
+          },
+          "constraint": "Intersection2",
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 108.1944232311019,
+              "y": 340.83253609486127
+            }
+          }
+        },
+        "39": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "38",
+            "p1": "36"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 108.1944232311019,
+              "y": 340.83253609486127
+            },
+            "r": 130.00384609695197,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 238.19826932805387,
+                "y": 340.83253609486127
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695197
+              },
+              "middlePosition": {
+                "x": -21.80942286585008,
+                "y": 340.8325360948622
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947736e-14,
+                "y": 130.00384609695197
+              },
+              "onePosition": {
+                "x": 238.19826932805387,
+                "y": 340.83253609486127
+              },
+              "oneDerivative": {
+                "x": 3.184175879989547e-14,
+                "y": -130.00384609695197
+              }
+            }
+          }
+        },
+        "40": {
+          "kind": "Point",
+          "genus": "Intersection",
+          "parents": {
+            "obj": "26",
+            "circle": "39"
+          },
+          "constraint": "Intersection1",
+          "debug": {
+            "exists": true,
+            "loc": {
+              "x": 147.41557598355115,
+              "y": 464.77890020760566
+            }
+          }
+        },
+        "41": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "40",
+            "p1": "38"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          },
+          "debug": {
+            "exists": true,
+            "c": {
+              "x": 147.41557598355115,
+              "y": 464.77890020760566
+            },
+            "r": 130.00384609695195,
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 277.41942208050307,
+                "y": 464.77890020760566
+              },
+              "zeroDerivative": {
+                "x": 0,
+                "y": -130.00384609695195
+              },
+              "middlePosition": {
+                "x": 17.411729886599204,
+                "y": 464.77890020760657
+              },
+              "middleDerivative": {
+                "x": -1.5920879399947733e-14,
+                "y": 130.00384609695195
+              },
+              "onePosition": {
+                "x": 277.41942208050307,
+                "y": 464.77890020760566
+              },
+              "oneDerivative": {
+                "x": 3.1841758799895465e-14,
+                "y": -130.00384609695195
+              }
+            }
+          }
+        },
+        "42": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "1",
+            "p1": "40"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 252,
+              "y": 542
+            },
+            "p1": {
+              "x": 147.41557598355115,
+              "y": 464.77890020760566
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 252,
+                "y": 542
+              },
+              "zeroDerivative": {
+                "x": -104.58442401644885,
+                "y": -77.22109979239434
+              },
+              "middlePosition": {
+                "x": 199.70778799177558,
+                "y": 503.3894501038028
+              },
+              "middleDerivative": {
+                "x": -104.58442401644885,
+                "y": -77.22109979239434
+              },
+              "onePosition": {
+                "x": 147.41557598355115,
+                "y": 464.77890020760566
+              },
+              "oneDerivative": {
+                "x": -104.58442401644885,
+                "y": -77.22109979239434
+              }
+            }
+          }
+        },
+        "43": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "40",
+            "p1": "38"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 147.41557598355115,
+              "y": 464.77890020760566
+            },
+            "p1": {
+              "x": 108.1944232311019,
+              "y": 340.83253609486127
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 147.41557598355115,
+                "y": 464.77890020760566
+              },
+              "zeroDerivative": {
+                "x": -39.22115275244926,
+                "y": -123.94636411274439
+              },
+              "middlePosition": {
+                "x": 127.80499960732652,
+                "y": 402.80571815123346
+              },
+              "middleDerivative": {
+                "x": -39.22115275244926,
+                "y": -123.94636411274439
+              },
+              "onePosition": {
+                "x": 108.1944232311019,
+                "y": 340.83253609486127
+              },
+              "oneDerivative": {
+                "x": -39.22115275244926,
+                "y": -123.94636411274439
+              }
+            }
+          }
+        },
+        "44": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "38",
+            "p1": "36"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 108.1944232311019,
+              "y": 340.83253609486127
+            },
+            "p1": {
+              "x": 149.317689016139,
+              "y": 217.50420597086594
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 108.1944232311019,
+                "y": 340.83253609486127
+              },
+              "zeroDerivative": {
+                "x": 41.12326578503712,
+                "y": -123.32833012399533
+              },
+              "middlePosition": {
+                "x": 128.75605612362045,
+                "y": 279.1683710328636
+              },
+              "middleDerivative": {
+                "x": 41.12326578503712,
+                "y": -123.32833012399533
+              },
+              "onePosition": {
+                "x": 149.317689016139,
+                "y": 217.50420597086594
+              },
+              "oneDerivative": {
+                "x": 41.12326578503712,
+                "y": -123.32833012399533
+              }
+            }
+          }
+        },
+        "45": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "36",
+            "p1": "34"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 149.317689016139,
+              "y": 217.50420597086594
+            },
+            "p1": {
+              "x": 255.07768353717404,
+              "y": 141.90114016721864
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 149.317689016139,
+                "y": 217.50420597086594
+              },
+              "zeroDerivative": {
+                "x": 105.75999452103503,
+                "y": -75.6030658036473
+              },
+              "middlePosition": {
+                "x": 202.19768627665653,
+                "y": 179.7026730690423
+              },
+              "middleDerivative": {
+                "x": 105.75999452103503,
+                "y": -75.6030658036473
+              },
+              "onePosition": {
+                "x": 255.07768353717404,
+                "y": 141.90114016721864
+              },
+              "oneDerivative": {
+                "x": 105.75999452103503,
+                "y": -75.6030658036473
+              }
+            }
+          }
+        },
+        "46": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "34",
+            "p1": "32"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 255.07768353717404,
+              "y": 141.90114016721864
+            },
+            "p1": {
+              "x": 385.0776835371739,
+              "y": 142.90114016721782
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 255.07768353717404,
+                "y": 141.90114016721864
+              },
+              "zeroDerivative": {
+                "x": 129.9999999999999,
+                "y": 0.9999999999991758
+              },
+              "middlePosition": {
+                "x": 320.077683537174,
+                "y": 142.40114016721822
+              },
+              "middleDerivative": {
+                "x": 129.9999999999999,
+                "y": 0.9999999999991758
+              },
+              "onePosition": {
+                "x": 385.0776835371739,
+                "y": 142.90114016721782
+              },
+              "oneDerivative": {
+                "x": 129.9999999999999,
+                "y": 0.9999999999991758
+              }
+            }
+          }
+        },
+        "47": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "32",
+            "p1": "30"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 385.0776835371739,
+              "y": 142.90114016721782
+            },
+            "p1": {
+              "x": 489.66210755362494,
+              "y": 220.12223995961367
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 385.0776835371739,
+                "y": 142.90114016721782
+              },
+              "zeroDerivative": {
+                "x": 104.58442401645101,
+                "y": 77.22109979239585
+              },
+              "middlePosition": {
+                "x": 437.36989554539946,
+                "y": 181.51169006341576
+              },
+              "middleDerivative": {
+                "x": 104.58442401645101,
+                "y": 77.22109979239585
+              },
+              "onePosition": {
+                "x": 489.66210755362494,
+                "y": 220.12223995961367
+              },
+              "oneDerivative": {
+                "x": 104.58442401645101,
+                "y": 77.22109979239585
+              }
+            }
+          }
+        },
+        "48": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "30",
+            "p1": "28"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 489.66210755362494,
+              "y": 220.12223995961367
+            },
+            "p1": {
+              "x": 528.8832603060735,
+              "y": 344.0686040723583
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 489.66210755362494,
+                "y": 220.12223995961367
+              },
+              "zeroDerivative": {
+                "x": 39.22115275244852,
+                "y": 123.94636411274465
+              },
+              "middlePosition": {
+                "x": 509.2726839298492,
+                "y": 282.095422015986
+              },
+              "middleDerivative": {
+                "x": 39.22115275244852,
+                "y": 123.94636411274465
+              },
+              "onePosition": {
+                "x": 528.8832603060735,
+                "y": 344.0686040723583
+              },
+              "oneDerivative": {
+                "x": 39.22115275244852,
+                "y": 123.94636411274465
+              }
+            }
+          }
+        },
+        "49": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "28",
+            "p1": "19"
+          },
+          "constraint": "Segment",
+          "debug": {
+            "exists": true,
+            "p0": {
+              "x": 528.8832603060735,
+              "y": 344.0686040723583
+            },
+            "p1": {
+              "x": 487.7599945210355,
+              "y": 467.39693419635336
+            },
+            "pathPositions": {
+              "zeroPosition": {
+                "x": 528.8832603060735,
+                "y": 344.0686040723583
+              },
+              "zeroDerivative": {
+                "x": -41.12326578503797,
+                "y": 123.32833012399504
+              },
+              "middlePosition": {
+                "x": 508.32162741355444,
+                "y": 405.73276913435586
+              },
+              "middleDerivative": {
+                "x": -41.12326578503797,
+                "y": 123.32833012399504
+              },
+              "onePosition": {
+                "x": 487.7599945210355,
+                "y": 467.39693419635336
+              },
+              "oneDerivative": {
+                "x": -41.12326578503797,
+                "y": 123.32833012399504
+              }
+            }
+          }
+        },
+        "50": {
+          "kind": "Button",
+          "genus": "Action",
+          "parents": {
+            "0": "41",
+            "1": "39",
+            "2": "37",
+            "3": "35",
+            "4": "33",
+            "5": "31",
+            "6": "29",
+            "7": "27",
+            "8": "26",
+            "9": "25",
+            "10": "24",
+            "11": "23",
+            "12": "22",
+            "13": "21",
+            "14": "18",
+            "15": "17",
+            "16": "16",
+            "17": "15",
+            "18": "14",
+            "19": "13",
+            "20": "12",
+            "21": "11",
+            "22": "10",
+            "23": "9",
+            "24": "8",
+            "25": "7",
+            "26": "6",
+            "27": "5",
+            "28": "4"
+          },
+          "geom": {
+            "loc": {
+              "x": 65,
+              "y": 71
+            }
+          },
+          "label": "Show Objects",
+          "constraint": "ActionButtonToggleHideShow",
+          "messages": [
+            "Hide Objects",
+            "Show Objects"
+          ],
+          "fade": true,
+          "debug": {
+            "exists": true
+          },
+          "style": {
+            "selectable": false
+          }
+        }
+      }
+    }
+  ]
+}
