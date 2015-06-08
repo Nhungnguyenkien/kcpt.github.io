@@ -46,10 +46,16 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Welcome!</h1>
-        <p>Welcome to the beta-test site for Web Sketchpad!</p>
-        <p>
-        <p><a class="btn btn-primary btn-lg" href="http://wsp.kcptech.com" role="button">Main Site &raquo;</a></p>
+      	<div class="col-md-8">
+			<h1>Welcome!</h1>
+			<p>Welcome to the beta-test site for Web Sketchpad!</p>
+			<p>
+			<p><a class="btn btn-primary btn-lg" href="http://wsp.kcptech.com" role="button">Main Site &raquo;</a></p>
+        </div>
+      	<div class="col-md-4">
+       		 <div class="sketch_canvas" data-url="./sketches/Newton.json" >&nbsp;</div>
+        </div>
+
       </div>
     </div>
 
@@ -97,7 +103,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-
+    <script charset="utf-8" type="text/javascript" src="js/vendor/wsp-min.js"></script>
+    <script charset="utf-8" type="text/javascript" src="./js/vendor/wsp-runner.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
