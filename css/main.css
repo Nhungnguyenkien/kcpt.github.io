@@ -3,8 +3,21 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+#videoModal .modal-dialog {
+	width: 100%;
+	padding: 20px;
+}
 
+#videoModal .modal-content {
+	height: 100%;
+	overflow:auto;
+	background-color: lightGray;
+}
 
+#videoModal .modal-body {
+	text-align: center;
+}
 
 
 
