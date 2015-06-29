@@ -1,6 +1,6 @@
 /*!
   Web Sketchpad Sketch Runner. Copyright &copy; 2015 KCP Technologies, a McGraw-Hill Education Company. All rights reserved. 
-  Version: Release: 2015Q1, Semantic Version: 4.1.1, Build Number: 882, Build Stamp: dn.kcptech.com/20150605141125
+  Version: Release: 2015Q2, Semantic Version: 4.2.0, Build Number: 911.2-r, Build Stamp: dn.kcptech.com/20150625153708
 */
 (function( $ ){
 
