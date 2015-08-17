@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "width": 543,
+    "height": 459,
+    "wsp-version": "4.2.1",
+    "wsp-build-number": "924",
+    "wsp-build-stamp": "sneferu.local/20150810110059",
+    "exporter-version": "5.03A2011(dev)",
+    "exporter-build": "2011(dev)",
+    "original-document-name": "WSP-Logo.gsp",
+    "start-page": "1"
+  },
+  "resources": {
+    "fontList": [
+      "\"Times\", sans-serif",
+      "\"Arial\", sans-serif"
+    ]
+  },
+  "pages": [
+    {
+      "metadata": {
+        "title": "1",
+        "id": "1",
+        "sketchRect": {
+          "top": 0,
+          "left": 0,
+          "bottom": 459,
+          "right": 543
+        }
+      },
+      "preferences": {
+        "units": {
+          "length": "cm",
+          "angle": "deg"
+        },
+        "precision": {
+          "length": 2,
+          "angle": 2,
+          "scalar": 2
+        },
+        "colorableComponents": {
+          "ActionButton": {
+            "color": "rgb(255,128,0)"
+          }
+        },
+        "text": {
+          "mathItalicization": true,
+          "textTypes": {
+            "Label": {
+              "font-family": "\"Times\", sans-serif",
+              "font-size": 14,
+              "font-style": "italic"
+            },
+            "Caption": {
+              "font-family": "\"Times\", sans-serif"
+            },
+            "Measurement": {
+              "font-family": "\"Times\", sans-serif",
+              "font-size": 14
+            },
+            "Action": {
+              "label": {
+                "font-family": "\"Arial\", sans-serif"
+              }
+            },
+            "Table": {
+              "font-family": "\"Arial\", sans-serif"
+            },
+            "AxisTicksAndOptionalLabel": {
+              "font-family": "\"Geneva\", sans-serif"
+            }
+          }
+        },
+        "fadeTraces": true,
+        "fadeHalfLife": 4.266666666666667
+      },
+      "objects": {
+        "1": {
+          "kind": "Point",
+          "genus": "Point",
+          "constraint": "Free",
+          "geom": {
+            "loc": {
+              "x": 81,
+              "y": 37
+            }
+          },
+          "style": {
+            "hidden": true
+          }
+        },
+        "2": {
+          "kind": "Point",
+          "genus": "Point",
+          "constraint": "Free",
+          "geom": {
+            "loc": {
+              "x": 27,
+              "y": 37
+            }
+          },
+          "style": {
+            "hidden": true
+          }
+        },
+        "3": {
+          "kind": "Point",
+          "genus": "Point",
+          "constraint": "Free",
+          "geom": {
+            "loc": {
+              "x": 496,
+              "y": 247
+            }
+          },
+          "style": {
+            "hidden": true
+          }
+        },
+        "4": {
+          "kind": "Point",
+          "genus": "Point",
+          "constraint": "Free",
+          "geom": {
+            "loc": {
+              "x": 283,
+              "y": 239
+            }
+          },
+          "style": {
+            "hidden": true
+          }
+        },
+        "5": {
+          "kind": "Circle",
+          "genus": "Circle",
+          "parents": {
+            "p0": "4",
+            "p1": "3"
+          },
+          "constraint": "CircleFromTwoPoints",
+          "style": {
+            "hidden": true
+          }
+        },
+        "6": {
+          "kind": "Point",
+          "genus": "PointOnPath",
+          "parents": {
+            "path": "5"
+          },
+          "value": 0.4480749346829142,
+          "constraint": "PointOnPath",
+          "style": {
+            "hidden": true
+          }
+        },
+        "7": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "4",
+            "p1": "6"
+          },
+          "constraint": "Segment",
+          "style": {
+            "hidden": true
+          }
+        },
+        "8": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "2",
+            "p1": "1"
+          },
+          "constraint": "Segment",
+          "style": {
+            "hidden": true,
+            "line-style": "dashed"
+          }
+        },
+        "9": {
+          "kind": "Point",
+          "genus": "PointOnPath",
+          "parents": {
+            "path": "8"
+          },
+          "value": 0.018518518518518517,
+          "constraint": "PointOnPath",
+          "style": {
+            "hidden": true,
+            "color": "rgb(255,128,0)"
+          }
+        },
+        "10": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "p0": "2",
+            "p1": "9"
+          },
+          "constraint": "Segment",
+          "style": {
+            "hidden": true,
+            "color": "purple"
+          }
+        },
+        "11": {
+          "kind": "Straight",
+          "genus": "Segment",
+          "parents": {
+            "source": "10",
+            "p0": "2",
+            "p1": "9"
+          },
+          "constraint": "TranslateVector",
+          "style": {
+            "hidden": true,
+            "color": "rgb(255,128,0)"
+          }
+        },
+        "12": {
+          "kind": "Point",
+          "genus": "PointOnPath",
+          "parents": {
+            "path": "7"
+          },
+          "value": 0.6085235639220545,
+          "constraint": "PointOnPath",
+          "style": {
+            "color": "rgb(255,128,0)"
+          }
+        },
+        "13": {
+          "kind": "Button",
+          "genus": "Action",
+          "parents": {
+            "0": "12",
+            "1": "6"
+          },
+          "geom": {
+            "loc": {
+              "x": 9,
+              "y": 10
+            }
+          },
+          "label": "Animate Points",
+          "style": {
+            "autostart": true,
+            "selectable": false
+          },
+          "constraint": "ActionButtonAnimate",
+          "messages": [
+            "Animate Points"
+          ],
+          "animationStates": [
+            {
+              "rate": 5,
+              "timeInterval": 0,
+              "repeat": true,
+              "motionType": "both"
+            },
+            {
+              "rate": 5,
+              "timeInterval": 0,
+              "repeat": true,
+              "motionType": "forward"
+            }
+          ]
+        },
+        "14": {
+          "kind": "Point",
+          "genus": "Point",
+          "parents": {
+            "source": "12",
+            "p0": "2",
+            "p1": "9"
+          },
+          "constraint": "TranslateVector",
+          "style": {
+            "traced": true,
+            "color": "purple"
+          }
+        }
+      }
+    }
+  ]
+}
