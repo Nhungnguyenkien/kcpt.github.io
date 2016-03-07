@@ -1,24 +1,27 @@
 /*!
-  Web Sketchpad Sketch Runner. Copyright &copy; 2015 KCP Technologies, a McGraw-Hill Education Company. All rights reserved. 
-  Version: Release: 2015Q2, Semantic Version: 4.2.0, Build Number: 911.2-r, Build Stamp: dn.kcptech.com/20150625153708
+  Web Sketchpad Sketch Runner. Copyright &copy; 2016 KCP Technologies, a McGraw-Hill Education Company. All rights reserved. 
+  Version: Release: 2015Q4Update1, Semantic Version: 4.5.0-alpha, Build Number: 1013, Build Stamp: ip-10-149-70-76/20160303102802
 */
 (function( $ ){
 
   var GSPConfig = window.GSPConfig;
 
+  function getVersion(gspInstance, field) {
+    return parseInt(gspInstance.version[field], 10);
+  }
+
   // Returns the latest instance whose major version matches the given
   // sketch json data.
-  function getGSPInstance(data) {
+  function doGetGSPInstance(majorJSON) {
     var i,
         instances,
-        instance,
-        majorJSON;
+        instance;
 
 
     function sortInstances() {
       instances.sort(function(a, b) {
         function cmp(field) {
-          return parseInt(b.version[field], 10) - parseInt(a.version[field], 10);
+          return getVersion(b, field) - getVersion(a, field);
         }
         return cmp('major') || cmp('minor') || cmp('patch');
       });
@@ -27,19 +30,42 @@
     if (typeof GSPConfig === "object" &&
         GSPConfig.instances &&
         GSPConfig.instances.length > 0 &&
-        data.metadata &&
-        data.metadata['wsp-version']) {
+        majorJSON) {
       instances = GSPConfig.instances;
       sortInstances();
       for(i = 0;i < instances.length;i++) {
         instance = instances[i];
-        majorJSON = data.metadata['wsp-version'].split('.')[0];
         if (instance.version.major === majorJSON) {
           return instance;
         }
       }
     }
-    return window.GSP;
+    return null;
+  }
+
+  function getGSPInstance(data) {
+    var majorJSON = data && data.metadata && data.metadata['wsp-version']
+      && data.metadata['wsp-version'].split('.')[0];
+    var deferred = $.Deferred();
+    var gspInstance = doGetGSPInstance(majorJSON);
+    var pathFunc, path;
+
+    function lastTry() { deferred.resolve(doGetGSPInstance(majorJSON) || window.GSP); }
+
+	  // If we've got a GSP that works, we're done.
+    if( gspInstance) {
+      deferred.resolve(gspInstance);
+    } else { // Otherwise, try and find one.
+      pathFunc = GSP.getConfigValue("compatibilityVersionPath");
+      path = pathFunc(majorJSON);
+      $.ajax({
+        url: path,
+        dataType: "script",
+        cache: true
+      }).always(lastTry);
+    }
+
+    return deferred.promise();
   }
 
   /*
@@ -69,6 +95,68 @@
       GSP.signalErrorWithMessage(chromeSameOriginQuirkMsg);
     }
   }
+
+  function createDocumentFromJSONData(gspInstance, data, $target, options) {
+    var sketch,
+      isVersion4_2_1;
+
+        // The now deprecated applyDocumentDiff was present in 3.0+,
+        // and removed in the version AFTER 4.2.1.  (see
+        // wsp-test/two-diffs.html). So 4.2.1 is the only modern
+        // release with both GSP.applyDocumentDiff and
+        // document.applydocumentDelta.
+        if (options.delta) {
+          if (gspInstance.applyDocumentDiff) {
+            isVersion4_2_1 =
+              getVersion(gspInstance, 'major') === 4 &&
+              getVersion(gspInstance, 'minor') === 2 &&
+              getVersion(gspInstance, 'patch') === 1;
+            if (!isVersion4_2_1) {
+              // We are somewhere between 3.0.0 and 4.2.0. Although the two-diffs
+              // bug will trigger on the second diff, at least they get
+              // one good diff!
+              gspInstance.applyDocumentDiff(data, JSON.parse(options.delta));
+            }
+            // else see below -- we apply the delta AFTER
+            // construction, as the Document constructor did not
+            // accept the documentDelta option at that time.
+          }
+          else {
+            // We are at a version after 4.2.1. Just pass the delta to the constructor.
+            options.sketchOptions = options.sketchOptions || {};
+            options.sketchOptions.documentDelta = options.delta;
+          }
+        }
+
+        //Note: there was once a time when Document constructor would return a sketch
+        //This is no longer the case, but since here we may be running an old version of WSP,
+        //we must continue to handle that case.
+        var Document = gspInstance.Document;
+        var docOrSketch = new Document($target, data, options.sketchOptions);
+        var isSketch = docOrSketch.document;
+        sketch = docOrSketch.focusPage || docOrSketch;
+
+        $target.data(isSketch? "sketch" : "document", docOrSketch);
+
+
+        if (docOrSketch.start) { docOrSketch.start(); }
+        else if (docOrSketch.startCurrentFocusedSketch) {
+          docOrSketch.startCurrentFocusedSketch(false);
+        }
+
+        // Special case for doc delta in version 4.2.1 -- see above
+        if (options.delta && isVersion4_2_1) {
+          docOrSketch.applyDocumentDelta(options.delta);
+        }
+
+        if( !options.autoStart) {
+          sketch.pause();
+        }
+
+        if( options.onReady) {
+          options.onReady.call($target, sketch, data.metadata);
+        }
+  }
   /*
    * Loads and runs a sketch.
    * @param {string | object} sketchSpec The sketch. If is a string,
@@ -94,7 +182,7 @@
    *                applied to the sketch immediately after loading.
    */
   function loadSketch(sketchSpec, sketchUrl, $target, options) {
-      var sketch, data, document;
+      var data;
       
       if (typeof sketchSpec === 'string') {
         try {
@@ -124,37 +212,11 @@
       }
       
       try {
-        var gspInstance = getGSPInstance(data);
-
-        if (options.delta && gspInstance.applyDocumentDiff) {
-          gspInstance.applyDocumentDiff(data, JSON.parse(options.delta));
-        }
-
-        //Note: there was once a time when Document constructor would return a sketch
-        //This is no longer the case, but since here we may be running an old version of WSP,
-        //we must continue to handle that case.
-        var Document = gspInstance.Document;
-        var docOrSketch = new Document($target, data, options.sketchOptions);
-        var isSketch = docOrSketch.document;
-        document = docOrSketch.document || docOrSketch;
-        sketch = docOrSketch.focusPage || docOrSketch;
-
-        $target.data(isSketch? "sketch" : "document", docOrSketch);
-
-
-        if (docOrSketch.start) { docOrSketch.start(); }
-        else if (docOrSketch.startCurrentFocusedSketch) {
-          docOrSketch.startCurrentFocusedSketch(false);
-        }
-
-        if( !options.autoStart) {
-          sketch.pause();
-        }
-
-        if( options.onReady) {
-          options.onReady.call($target, sketch, data.metadata);
-        }
-        GSP.log("Loaded Sketch: " + sketchUrl);
+        getGSPInstance(data).then(function(gspInstance) {
+          createDocumentFromJSONData(gspInstance, data, $target, options);
+          GSP.log("Loaded Sketch: " + sketchUrl);     
+        });
+     
       } catch(e) {
          e.message = "Load failed: Exception thrown in startup: " + e.message;
          GSP.signalCaughtError(e);
@@ -231,8 +293,7 @@
     /*
      * Fetches a requested sketch object from another sketch on the same page
      * and loads it.
-     * @param {string} myVar A variable in the global namespace of a sketch
-     *        document. The text of the value should be a sketch document.
+     * @param {string} cloneId The DOM id of a DOM element containing a Sketchpad document.
      * @param {JQuery Object} $target Identifies the DOM location that will be
      *        replaced by the sketch.
      */

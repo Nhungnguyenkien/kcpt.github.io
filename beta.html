@@ -27,6 +27,26 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+     <!-- Modal Video triggered by buttons -->  
+	 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="TutorialVideoTitle" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="TutorialVideoTitle">Tutorial Video</h4>
+		  </div>
+		  <div class="modal-body">
+			<video id="videoModalPlayer" controls src=""></video>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+       
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -36,13 +56,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand-icon" href="#"><img alt="Brand" src="img/wsp.png" alt="Web Sketchpad"></a>
-
+          <a class="navbar-brand" href="#">Web Sketchpad Beta</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="mailto:wsp@kcptech.com?Subject=Web Sketchpad">Contact Us</a></li>
-          </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
@@ -51,11 +67,10 @@
     <div class="jumbotron">
       <div class="container">
       	<div class="col-md-8">
-			      <h1>About Web Sketchpad</h1>
-
-            <p><em>Web Sketchpad</em> is software that lets you interact with sketches from <a href="http://www.keycurriculum.com"><i>The Geometer's Sketchpad</i></a>
-              using an HTML5-enabled browser on a mobile device or desktop computer. <em>The Geometer's Sketchpad</em> is a Dynamic Geometry® exploration environment
-              available for Macintosh and PC computers from <a href="http://www.mheducation.com">McGraw-Hill Education.</a></p>
+			<h1>Welcome!</h1>
+			<p>Welcome to the beta-test site for Web Sketchpad!</p>
+			
+			<p>Take a look at some of the introductory resources below, note the license terms, and then head over to the <a class="btn btn-primary btn-lg" href="http://wsp.kcptech.com" role="button">Main Site &raquo;</a></p>
         </div>
       	<div class="col-md-4">
        		 <div class="sketch_canvas" data-url="./sketches/Newton.json" >&nbsp;</div>
@@ -63,17 +78,44 @@
 
       </div>
     </div>
+    
+    
 
     <div class="container">
+      <!-- Example row of columns -->
+      <div id="resources" class="row">
+        <div class="col-md-4">
+          <h2>Tutorial Videos</h2>
+          <p>Daniel Scher has put together some short videos to orient you to Web Sketchpad and how to use it. </p>
+          <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#videoModal" data-video-src="assets/Introduction and Exporting.mp4"><span class="video-title">Introduction and Exporting</span> &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#videoModal" data-video-src="assets/Using Tools.mp4"><span class="video-title">Using Tools</span> &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#videoModal" data-video-src="assets/Making Tools.mp4"><span class="video-title">Making Tools</span> &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Web Sketchpad Tools</h2>
+          <p>We have assembled a collection of Sketchpad documents that you'll find useful when creating Web Sketchpad activities that include tools</p>
+          <p><a class="btn btn-default" href="downloads/Web%20Sketchpad%20Tools.zip" role="button">Download &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Feedback and Support</h2>
+          <p>
+            Please give us feedback, ask questions, and get help if you need it
+            <ul>
+              <li>For technical questions and bug reports: <a href="mailto:wsp@kcptech.com">wsp@kcptech.com</a></li>
+              <li>For Sketchpad usage and pedagogy questions: <a href="mailto:dscher@kcptech.com">Daniel Scher</a></li>              
+            </ul>
+          </p>
+        </div>
+      </div>
         <div class="row">
           <div class="col-md-4">
 			  <h2>Web Sketches in the Wild</h2>
               <p>Some brave souls have already been using experimental versions of Web Sketchpad.</p>
 			  <ul>
-        <li>The <a href="https://illuminations.nctm.org/WSP/">NCTM Illuminations</a> site has a brace of web sketches.</li>
 				<li>Daniel Scher and Scott Steketee (and others) at <a href="http://blog.keypress.com/">Sine of the Times</a>.</li>
+				<li>Ross Isennegger's blog: <a href="http://mathfest.blogspot.com/2015/06/an-interactive-version-of-triangle.html">mathfest.blogspot.com</a>.</li>
 			 	<li>Scott Steketee on how Web Sketchpad might be used in an <a href="http://geometricfunctions.org/wsp/july2015/ferris-wheel/">eBook</a>.</li>
-			  </ul>
+			  </ul>			  
           </div>
           <div class="col-md-4">
 			  <h2>Java Sketchpad "Shim"</h2>
@@ -83,25 +125,19 @@
 			  </ul>
           </div>
           <div class="col-md-4">
-    			  <h2>Technical Requirements</h2>
-            <div>Web Sketchpad is designed for HTML5-ready web browsers.
-              <ul>
-                <li>Firefox: latest version on Windows and Mac</li>
-                <li>Chrome: latest version on Windows, Mac, iOS, and Android</li>
-                <li>Safari: version 6.1+ on Mac, iOS6+</li>
-                <li>IE: IE9+ on Windows</li>
-              </ul>
-            </div>
-          </div>
+			  <h2>Technical Requirements</h2>
+			  <p>To use the exporter site, you'll need a recent version of Firefox, Chrome, Safari, or Internet Explorer (version 10 or better). Viewers of your exported HTML content can use IE9 or better.</p>
+          </div>         
         </div>
 
         <div class="row">
           <div class="col-md-12">
           <h2>License Information</h2>
-          <p>Web Sketchpad is licensed to the National Council of Teachers of Mathematics (NCTM) and other beta testers of Web Sketchpad for non-commercial use only.
-          </p>
+          <p>
+            You may freely use Web Sketchpad in your own Web pages, provided you do so for non-commercial use only. Other permissions or rights to Web Sketchpad require a written agreement from McGraw-Hill Education; contact McGraw-Hill Education for more information.
 
-          <p>Dynamic Geometry and Sketchpad are registered trademarks of McGraw-Hill Education.</p>
+            The Geometer's Sketchpad and Dynamic Geometry are registered trademarks of McGraw-Hill Education. Sketchpad is a trademark of McGraw-Hill Education.
+          </p>
           </div>
         </div>
       </div>
@@ -109,7 +145,7 @@
       <hr>
 
       <footer>
-        <p>&copy; McGraw-Hill Education 2016</p>
+        <p>&copy; McGraw-Hill Education 2015</p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

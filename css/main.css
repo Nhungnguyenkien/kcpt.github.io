@@ -3,7 +3,14 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   
+
+
+.navbar-brand-icon img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
 #videoModal .modal-dialog {
 	width: 100%;
 	padding: 20px;
@@ -18,18 +25,3 @@
 #videoModal .modal-body {
 	text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
