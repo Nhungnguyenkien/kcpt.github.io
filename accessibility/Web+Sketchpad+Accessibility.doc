@@ -1,0 +1,331 @@
+Message-ID: <1618500171.72266.1568240806322.JavaMail.root@us-east-1a-confluence-mgmt-prod-11-120.mhecloud.com>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_72265_879917405.1568240806321"
+
+------=_Part_72265_879917405.1568240806321
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Web Sketchpad Accessibility</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Web Sketchpad Accessibility</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"WebSketchpadAccessibility-Overview"><span style=3D"color:=
+ rgb(0,0,0);">Overview</span></h2>
+<p>Accessibility of MHE content is company-wide priority, endorsed by the b=
+usiness. Web Sketchpad content is currently not highly accessible. We propo=
+se to address this, principally by:</p>
+<ul>
+<li>Supporting authorship of keyboard accessible Web Sketches (<a class=3D"=
+external-link" href=3D"https://www.w3.org/TR/WCAG20/#keyboard-operation" re=
+l=3D"nofollow">WCAG20 2.1</a>).</li>
+<li>Investigating, and as feasible implementing, screen-reader support (<a =
+class=3D"external-link" href=3D"https://www.w3.org/TR/WCAG20/#ensure-compat=
+" rel=3D"nofollow">WCAG20 4.1</a>).</li>
+</ul>
+<p>&nbsp;</p>
+<p>See <a href=3D"/display/KEY/Web+Sketchpad+Accessibility+Effort+Estimatio=
+n">Web Sketchpad Accessibility Effort Estimation</a> for work estimates and=
+ more detailed scoping.</p>
+<h1 id=3D"WebSketchpadAccessibility-AreasforImprovement">Areas for Improvem=
+ent</h1>
+<p>There are three main areas where we can improve accessibility for Web Sk=
+etches.</p>
+<h2 id=3D"WebSketchpadAccessibility-KeyboardAccessibility">Keyboard Accessi=
+bility</h2>
+<h3 id=3D"WebSketchpadAccessibility-ObjectFocus">Object Focus</h3>
+<p>We can support a notion of object "focus" in the web sketch, where you c=
+an tab/shift-tab between objects. This would put some focus UI around the o=
+bject, and enable the enter key to activate.</p>
+<ul>
+<li>Buttons. Enter presses the button.</li>
+<li>Numeric Input Parameters. Enter brings up the number pad.</li>
+<li>Calculations/Functions. Enter brings up the calculator.</li>
+</ul>
+<h3 id=3D"WebSketchpadAccessibility-KeyboardAccessibleUI">Keyboard Accessib=
+le UI</h3>
+<p>Additional (and more conventional HTML accessibility) should be provided=
+ for:</p>
+<ul>
+<li>The numeric entry pad.</li>
+<li>The calculator.</li>
+<li>The tool palette.</li>
+</ul>
+<p>&nbsp;</p>
+<p>We can support keyboard shortcut authorship.</p>
+<ul>
+<li>Authors can specific a character in a button label as the shortcut (via=
+ the '&amp;' prefix).</li>
+</ul>
+<h3 id=3D"WebSketchpadAccessibility-GeometricObjectKeyboardAccessibility">G=
+eometric Object Keyboard Accessibility</h3>
+<p>Keyboard accessibility for more general geometric objects can be support=
+ed by:</p>
+<ul>
+<li>Designating keyboard shortcuts in the label of the object (via the '&am=
+p;') prefix. The object then would be focusable, and participate in the tab=
+ order.</li>
+<li>A focused geometric object would support the arrow keys for dragging.</=
+li>
+</ul>
+<h2 id=3D"WebSketchpadAccessibility-ScreenReaderSupport">Screen Reader Supp=
+ort</h2>
+<p>Technical options for screen reader support are not yet clear. The curre=
+nt plan is therefore to spike various possibilities, and formulate actionab=
+le plans for screen reader support.</p>
+<ul>
+<li>Can we support screen readers for web sketchpad buttons, parameters, fo=
+rmulas, or object labels? This would augment keyboard accessibility for the=
+se objects.</li>
+<li>Can we support screen readers for text components?
+<ul>
+<li>Can we support selection in text components, and link that to the DLE w=
+idget selection -&gt; speech API?</li>
+</ul></li>
+</ul>
+<h2 id=3D"WebSketchpadAccessibility-SmallerFeatures">Smaller Features</h2>
+<p>These are miscellaneous features generally increasing usability, and the=
+refore accessibility. We will prioritize them, and implement them (or not) =
+according to priority and resource availability.</p>
+<h3 id=3D"WebSketchpadAccessibility-MobileZoomSupport">Mobile Zoom Support<=
+/h3>
+<ul>
+<li>Support for pinch-zoom would make mobile access more accessible. This w=
+ould require changing the current sketch content scrolling API, as supporti=
+ng dragging in whitespace to scroll interferes with the pinch-zoom gesture.=
+</li>
+<li>Other features and bug fixes as identified in the WSP Accessibility Epi=
+c.</li>
+</ul>
+<h1 id=3D"WebSketchpadAccessibility-References">References</h1>
+<ul>
+<li><a class=3D"external-link" href=3D"https://jira.mheducation.com/browse/=
+WSP-2083" rel=3D"nofollow">WSP JIRA Accessibility Epic</a></li>
+<li><a class=3D"external-link" href=3D"https://www.w3.org/TR/WCAG20/" rel=
+=3D"nofollow">https://www.w3.org/TR/WCAG20/</a></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_72265_879917405.1568240806321--

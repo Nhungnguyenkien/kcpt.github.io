@@ -1,0 +1,409 @@
+Message-ID: <694611477.72270.1568240874530.JavaMail.root@us-east-1a-confluence-mgmt-prod-11-120.mhecloud.com>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_72269_1156494084.1568240874530"
+
+------=_Part_72269_1156494084.1568240874530
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>VPAT / Accessibility Compliance Documentation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>VPAT / Accessibility Compliance Documentation</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"VPAT/AccessibilityComplianceDocumentation-WhatisaVPAT?"><=
+span class=3D"inline-comment-marker" data-ref=3D"f9ffdb50-5e9a-4cb4-b014-a7=
+6a2b799f59">What is a VPAT?</span>&nbsp;</h2>
+<p>An Accessibility Conformance Report is based on the voluntary product ac=
+cessibility template (VPAT).&nbsp; The <a class=3D"external-link" href=3D"h=
+ttps://www.itic.org/policy/accessibility/vpat" rel=3D"nofollow">VPAT report=
+ form</a> is owned by the Information Technology Industry Council (ITI) and=
+ includes conformance documentation options for&nbsp;</p>
+<ul>
+<li><a class=3D"external-link" href=3D"https://www.federalregister.gov/docu=
+ments/2018/01/22/2018-00848/information-and-communication-technology-ict-st=
+andards-and-guidelines." rel=3D"nofollow">Revised Section 508 standards</a>=
+&nbsp;=E2=80=93 the U.S. Federal accessibility standard</li>
+<li><a class=3D"external-link" href=3D"http://www.etsi.org/deliver/etsi_en/=
+301500_301599/301549/01.01.02_60/en_301549v010102p.pdf" rel=3D"nofollow">EN=
+ 301 549</a>&nbsp;=E2=80=93 the European Union=E2=80=99s =E2=80=9CAccessibi=
+lity requirements suitable for public procurement of ICT products and servi=
+ces in Europe=E2=80=9D</li>
+<li><a class=3D"external-link" href=3D"https://www.w3.org/TR/2008/REC-WCAG2=
+0-20081211/" rel=3D"nofollow">WCAG 2.0</a>&nbsp;or ISO/IEC 40500 =E2=80=93 =
+W3C/WAI=E2=80=99s Web Content Accessibility Guidelines</li>
+</ul>
+<p>The VPAT is a living report form and will be regularly updated by the IT=
+I to reflect changes to conformance standards (e.g. update from WCAG 2.0 to=
+ WCAG 2.1).</p>
+<p>Be sure to validate that you are referencing the latest <a class=3D"exte=
+rnal-link" href=3D"https://www.itic.org/policy/accessibility/vpat" rel=3D"n=
+ofollow">VPAT report form</a> template to understand current requirements.&=
+nbsp;</p>
+<h3 id=3D"VPAT/AccessibilityComplianceDocumentation-WhousesVPATs?"><span cl=
+ass=3D"inline-comment-marker" data-ref=3D"bdc34100-0485-4bcb-bb52-3b7d52280=
+e8f">Who uses VPATs?</span></h3>
+<p>VPATs are often requested or required as part of the evaluation and proc=
+urement process for school districts and universities.&nbsp; It helps admin=
+istrators understand the accessibility levels of a product, and most import=
+antly, identify any gaps that they should be aware of so that they can bett=
+er support their students.&nbsp;&nbsp;</p>
+<h2 id=3D"VPAT/AccessibilityComplianceDocumentation-MHE'sAccessibilityConfo=
+rmanceReports">MHE's Accessibility Conformance Reports</h2>
+<h3 id=3D"VPAT/AccessibilityComplianceDocumentation-RequiredReportFeatures"=
+>Required Report Features</h3>
+<ul>
+<li><strong>Report Title:</strong><strong>&nbsp;</strong>=E2=80=9CMcGraw-Hi=
+ll Education Accessibility Conformance Report=E2=80=9D</li>
+<li><strong>VPAT Heading </strong><strong>Information:</strong><strong>&nbs=
+p;</strong>Template version "VPAT=C2=AE Version 2.1 =E2=80=93 March 2018"</=
+li>
+<li><strong>Name of Product &amp; Version:&nbsp;</strong>The customer-facin=
+g application name (needs to be discernible for potential customers who are=
+ evaluating the product)</li>
+<li><strong>Product Description:&nbsp;</strong>Customer-facing description =
+of the app's purpose; needs to be discernible for customers who are evaluat=
+ing the product&nbsp;</li>
+<li><strong>Date:</strong> VPATs report compliance at the time of testing.&=
+nbsp;</li>
+<li><strong>Contact Information:</strong> so that people can ask further cl=
+arification as needed.&nbsp;We use&nbsp;<a class=3D"external-link" href=3D"=
+mailto:accessibility@mheducation.com" rel=3D"nofollow">accessibility@mheduc=
+ation.com</a>&nbsp;which goest to CXG.&nbsp;</li>
+<li><strong>Evaluation Methods Used:&nbsp;</strong>This explains the scope =
+of content evaluated, assistive technologies, and testing methodologies.&nb=
+sp;
+<ul>
+<li>MHE standard ATs for VPAT:&nbsp; JAWS2018, Zoom Text, Dragon Naturally =
+Speaking&nbsp;</li>
+</ul></li>
+<li><strong>Applicable Standards/Guidelines:&nbsp;</strong><br>
+<ul>
+<li>The list must include only the Standards/Guidelines that were used to d=
+evelop the product.</li>
+<li>A report must contain a minimum of one Standard/Guideline or any combin=
+ation of the three Standards.<br>
+<ul>
+<li><a class=3D"external-link" href=3D"https://www.federalregister.gov/docu=
+ments/2018/01/22/2018-00848/information-and-communication-technology-ict-st=
+andards-and-guidelines." rel=3D"nofollow">Revised Section 508 standards</a>=
+&nbsp;=E2=80=93 the U.S. Federal accessibility standard</li>
+<li><a class=3D"external-link" href=3D"https://www.w3.org/TR/2008/REC-WCAG2=
+0-20081211/" rel=3D"nofollow">WCAG 2.0</a>&nbsp;or ISO/IEC 40500 =E2=80=93 =
+W3C/WAI=E2=80=99s Web Content Accessibility Guidelines</li>
+</ul></li>
+</ul></li>
+<li><strong>Terms:&nbsp;</strong>Conformance levels for all standards/guide=
+lines used to develop the product:
+<ul>
+<li><strong>Supports</strong>: The functionality of the product has at leas=
+t one method that meets the criterion without known defects or meets with e=
+quivalent facilitation.</li>
+<li><strong><span class=3D"inline-comment-marker" data-ref=3D"07bdbeba-76c8=
+-4c04-9ebc-fe37801d9ab8">Supports with Exceptions</span></strong><span clas=
+s=3D"inline-comment-marker" data-ref=3D"07bdbeba-76c8-4c04-9ebc-fe37801d9ab=
+8">:</span> Some functionality of the product does not meet the criterion.<=
+/li>
+<li><strong>Does Not Support</strong>:<strong> </strong>The<strong> </stron=
+g>majority of product functionality does not meet the criterion.</li>
+<li><strong>Not Applicable</strong>:<strong> </strong>The criterion is not =
+relevant to the product.</li>
+<li><strong>Not Evaluated</strong>: The product has not been evaluated agai=
+nst the criterion. &nbsp;This can only be used in WCAG 2.0 Level AAA.</li>
+</ul></li>
+<li><strong>Conformance Tables&nbsp;</strong><br>
+<ul>
+<li><p><strong>WCAG</strong></p>
+<ul>
+<li><p>Table 1: Success Criteria, Level A</p></li>
+<li><p>Table 2: Success Criteria, Level AA</p></li>
+</ul></li>
+<li><strong>2017 Section 508 Report</strong><br>
+<ul>
+<li><strong>Chapter 3: Functional Performance Criterial (FPC)&nbsp;=E2=80=
+=93 Reports on user impact by disability type</strong><br>
+<ul>
+<li><p class=3D"auto-cursor-target">Usage without vision</p></li>
+<li><p class=3D"auto-cursor-target">Usage with limited vision</p></li>
+<li><p class=3D"auto-cursor-target">Usage without perception of colour</p><=
+/li>
+<li><p class=3D"auto-cursor-target">Usage without hearing</p></li>
+<li><p class=3D"auto-cursor-target">Usage with limited hearing</p></li>
+<li><p class=3D"auto-cursor-target">Usage without vocal capability</p></li>
+<li><p class=3D"auto-cursor-target">Usage with limited manipulation or stre=
+ngth</p></li>
+<li><p class=3D"auto-cursor-target">Usage with limited reach</p></li>
+<li><p class=3D"auto-cursor-target">Minimize photosensitive seizure trigger=
+s</p></li>
+<li><p class=3D"auto-cursor-target">Usage with limited cognition</p></li>
+<li><p class=3D"auto-cursor-target">Privacy<strong><strong><strong><strong>=
+<strong><strong><strong><strong><strong><strong><br></strong></strong></str=
+ong></strong></strong></strong></strong></strong></strong></strong></p></li=
+>
+</ul></li>
+<li><strong>Chapter 5: Software</strong></li>
+<li><strong>Chapter 6: Support Documentation and Services</strong></li>
+</ul></li>
+</ul></li>
+<li><strong>Legal Disclaimer</strong>&nbsp;&nbsp;
+<ul>
+<li>"This report reflects the results of testing performed in 'XXXXX'&nbsp;=
+with 'explanation of content selections used'. Some accessibility support f=
+eatures are content dependent. As a result, some compliance exceptions note=
+d in the VPAT arise from exceptions relevant to the content in the specific=
+ title tested and do not reflect gaps in the "app name" application. Conten=
+t accessibility may vary by title. This report is provided for information =
+purposes only.'</li>
+</ul></li>
+</ul>
+<p>As the cover page to the report, MHE authored&nbsp;VPAT Companion cover =
+page that provides a 1-page overview of accessibility conformance report, i=
+ncluding a Summary of Results.</p>
+<h3 id=3D"VPAT/AccessibilityComplianceDocumentation-Whenshouldaproductrecei=
+veaVPAT?">When should a product receive a VPAT?</h3>
+<p>A VPAT is the final step in the auditing process. The report publicly de=
+tails on the accessibility of an application's user experience, so it is im=
+portant that your application is as compliant as you can make it before aut=
+horing begins.&nbsp; In most circumstances, we suggest a remediation round =
+between the audit and VPAT authoring to close as many outstanding gaps as p=
+ossible.&nbsp; While no product is 100% accessible, we want to eliminate as=
+ many "Does Not Support" and "Supports with Exceptions" criteria as possibl=
+e.&nbsp;&nbsp;</p>
+<p>Because the VPAT should reflect customer experiences and not discrete ap=
+plications, audits and VPATs may be scheduled by the DAIM team based on a c=
+ombination of factors, including application readiness and common workflows=
+.&nbsp;</p>
+<h3 id=3D"VPAT/AccessibilityComplianceDocumentation-LifespanofaVPAT">Lifesp=
+an of a VPAT</h3>
+<p>A VPAT should be kept current and be revised&nbsp;every two years&nbsp;<=
+em>at minimum&nbsp;</em>and updated periodically to document incremental im=
+provements.&nbsp;</p>
+<p>The TPM should maintain a the post-audit accessibility roadmap and prior=
+itize backlog tickets that will increase documented conformance support.&nb=
+sp; When new features are released, the TPM must work with the DAIM team to=
+ ensure that accessibility updates are validated, so that VPAT updates can =
+be made where appropriate.&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_72269_1156494084.1568240874530--

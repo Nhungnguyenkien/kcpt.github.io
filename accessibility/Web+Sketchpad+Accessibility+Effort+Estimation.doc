@@ -1,0 +1,548 @@
+Message-ID: <244767756.72268.1568240838056.JavaMail.root@us-east-1a-confluence-mgmt-prod-11-120.mhecloud.com>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_72267_217517145.1568240838056"
+
+------=_Part_72267_217517145.1568240838056
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Web Sketchpad Accessibility Effort Estimation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Web Sketchpad Accessibility Effort Estimation</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"WebSketchpadAccessibilityEffortEstimation-AcceptanceCrite=
+ria">Acceptance Criteria</h1>
+<p>This is a plan to fully support MHE's accessibility goals "WCAG 2.0 AA" =
+per&nbsp;<a href=3D"/display/DAIM/DPG+Accessibility+Implementation+Model+Ho=
+me">DPG Accessibility Implementation Model Home</a>, including being approp=
+riately officially designated as being compliant per&nbsp;&nbsp;<a href=3D"=
+/pages/viewpage.action?pageId=3D162709926">VPAT / Accessibility Compliance =
+Documentation</a></p>
+<ul>
+<li>The estimated effort will support authorship of&nbsp;WCAG 2.0 AA compli=
+ant Web Sketchpad content, allowing authors to add accessibility as part of=
+ content creation.</li>
+</ul>
+<p>Out of scope:</p>
+<ul>
+<li>Conversion of arbitrary content into accessible form. It will be *possi=
+ble* to make accessible content, but it will not happen automatically for a=
+rbitrary content. That's just too complicated to do in general.</li>
+<li>Any additional work needed to re-author existing content to take advant=
+age of accessibility features. This estimate is for the engineering work, n=
+ot the content work.</li>
+</ul>
+<h1 id=3D"WebSketchpadAccessibilityEffortEstimation-Estimates">Estimates</h=
+1>
+<p>Estimates are for a full Scrum team: lead, 2 devs, QA; 1/2 time support =
+by PM/TPM - 5 FTEs</p>
+<h2 id=3D"WebSketchpadAccessibilityEffortEstimation-WebSketchpadJavascriptL=
+ibraryEnhancement">Web Sketchpad Javascript Library Enhancement</h2>
+<p>This is the raw material we'll smooth out into more estimate-able items.=
+</p>
+<p>Screenshots</p>
+<h4 id=3D"WebSketchpadAccessibilityEffortEstimation-"><span class=3D"conflu=
+ence-embedded-file-wrapper confluence-embedded-manual-size"><img class=3D"c=
+onfluence-embedded-image" height=3D"250" src=3D"/download/attachments/10227=
+6651/image2016-6-14%2013%3A2%3A39.png?version=3D1&amp;modificationDate=3D14=
+65934559795&amp;api=3Dv2" data-image-src=3D"/download/attachments/102276651=
+/image2016-6-14%2013%3A2%3A39.png?version=3D1&amp;modificationDate=3D146593=
+4559795&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-resou=
+rce-id=3D"102278407" data-linked-resource-version=3D"1" data-linked-resourc=
+e-type=3D"attachment" data-linked-resource-default-alias=3D"image2016-6-14 =
+13:2:39.png" data-base-url=3D"https://confluence.mheducation.com" data-link=
+ed-resource-content-type=3D"image/png" data-linked-resource-container-id=3D=
+"102276651" data-linked-resource-container-version=3D"38"></span><span clas=
+s=3D"confluence-embedded-file-wrapper confluence-embedded-manual-size"><img=
+ class=3D"confluence-embedded-image" height=3D"250" src=3D"/download/attach=
+ments/102276651/image2016-6-14%2013%3A3%3A29.png?version=3D1&amp;modificati=
+onDate=3D1465934610293&amp;api=3Dv2" data-image-src=3D"/download/attachment=
+s/102276651/image2016-6-14%2013%3A3%3A29.png?version=3D1&amp;modificationDa=
+te=3D1465934610293&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-l=
+inked-resource-id=3D"102278413" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"attachment" data-linked-resource-default-alias=3D"imag=
+e2016-6-14 13:3:29.png" data-base-url=3D"https://confluence.mheducation.com=
+" data-linked-resource-content-type=3D"image/png" data-linked-resource-cont=
+ainer-id=3D"102276651" data-linked-resource-container-version=3D"38"></span=
+><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manual=
+-size"><img class=3D"confluence-embedded-image" height=3D"250" src=3D"/down=
+load/attachments/102276651/image2016-6-14%2013%3A4%3A52.png?version=3D1&amp=
+;modificationDate=3D1465934693194&amp;api=3Dv2" data-image-src=3D"/download=
+/attachments/102276651/image2016-6-14%2013%3A4%3A52.png?version=3D1&amp;mod=
+ificationDate=3D1465934693194&amp;api=3Dv2" data-unresolved-comment-count=
+=3D"0" data-linked-resource-id=3D"102278419" data-linked-resource-version=
+=3D"1" data-linked-resource-type=3D"attachment" data-linked-resource-defaul=
+t-alias=3D"image2016-6-14 13:4:52.png" data-base-url=3D"https://confluence.=
+mheducation.com" data-linked-resource-content-type=3D"image/png" data-linke=
+d-resource-container-id=3D"102276651" data-linked-resource-container-versio=
+n=3D"38"></span><span class=3D"confluence-embedded-file-wrapper"><img class=
+=3D"confluence-embedded-image" src=3D"/download/attachments/102276651/image=
+2016-6-14%2013%3A5%3A29.png?version=3D1&amp;modificationDate=3D146593472994=
+8&amp;api=3Dv2" data-image-src=3D"/download/attachments/102276651/image2016=
+-6-14%2013%3A5%3A29.png?version=3D1&amp;modificationDate=3D1465934729948&am=
+p;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-resource-id=3D"=
+102278425" data-linked-resource-version=3D"1" data-linked-resource-type=3D"=
+attachment" data-linked-resource-default-alias=3D"image2016-6-14 13:5:29.pn=
+g" data-base-url=3D"https://confluence.mheducation.com" data-linked-resourc=
+e-content-type=3D"image/png" data-linked-resource-container-id=3D"102276651=
+" data-linked-resource-container-version=3D"38"></span><span class=3D"confl=
+uence-embedded-file-wrapper confluence-embedded-manual-size"><img class=3D"=
+confluence-embedded-image" height=3D"250" src=3D"/download/attachments/1022=
+76651/image2016-6-14%2013%3A6%3A17.png?version=3D1&amp;modificationDate=3D1=
+465934777540&amp;api=3Dv2" data-image-src=3D"/download/attachments/10227665=
+1/image2016-6-14%2013%3A6%3A17.png?version=3D1&amp;modificationDate=3D14659=
+34777540&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-reso=
+urce-id=3D"102278428" data-linked-resource-version=3D"1" data-linked-resour=
+ce-type=3D"attachment" data-linked-resource-default-alias=3D"image2016-6-14=
+ 13:6:17.png" data-base-url=3D"https://confluence.mheducation.com" data-lin=
+ked-resource-content-type=3D"image/png" data-linked-resource-container-id=
+=3D"102276651" data-linked-resource-container-version=3D"38"></span></h4>
+<h3 id=3D"WebSketchpadAccessibilityEffortEstimation-MainSketchContent">Main=
+ Sketch Content</h3>
+<ul>
+<li>Canvas Sub dom for focused point:&nbsp;<a class=3D"external-link" href=
+=3D"https://www.paciellogroup.com/blog/2015/02/html5-canvas-sub-dom/" rel=
+=3D"nofollow">https://www.paciellogroup.com/blog/2015/02/html5-canvas-sub-d=
+om/</a>
+<ul>
+<li>Spike: Can we create HTML DOM elements to represent canvas objects, so =
+that the work with tab order, speech.</li>
+</ul></li>
+<li>Tab order for elements</li>
+<li>Aria goodness for text objects</li>
+<li>Keyboard shortcut
+<ul>
+<li>&amp; output</li>
+<li>keystroke trapping</li>
+</ul></li>
+<li>Focus element
+<ul>
+<li>Appearance</li>
+<li>Action<br>
+<ul>
+<li>Enter to activate</li>
+<li>Arrow keys to reposition</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id=3D"WebSketchpadAccessibilityEffortEstimation-NumericKeypad/Calculato=
+r">Numeric Keypad / Calculator</h3>
+<ul>
+<li>Aria Roles</li>
+<li>Tab Order</li>
+</ul>
+<h3 id=3D"WebSketchpadAccessibilityEffortEstimation-LabelDialog">Label Dial=
+og</h3>
+<ul>
+<li>Aria Roles</li>
+<li>Tab Order</li>
+</ul>
+<h3 id=3D"WebSketchpadAccessibilityEffortEstimation-ToolPalette">Tool Palet=
+te</h3>
+<h3 id=3D"WebSketchpadAccessibilityEffortEstimation-InitialState">Initial S=
+tate</h3>
+<ul>
+<li>Design Question: Are the tools in the tab order by default? Seems like =
+a pain, but perhaps mandatory.
+<ul>
+<li>Perhaps we need the "Hide Tool Palette" feature (so you can tab to the =
+hide button and hide the tools). Hidden tools then don't jam the tab order.=
+</li>
+<li>Aria Roles</li>
+<li>Tab Order</li>
+<li>Focus Highlight</li>
+<li>Enter to commence.</li>
+</ul></li>
+<li>Proposed Design, at least for initial estimation. UI is toolbar has 3 t=
+ab-able items: undo / redo (if active), and tool list as a whole. tool list=
+ is like a menu - there is a current one, which you can up/down arrow throu=
+gh. Enter begins toolplay.</li>
+</ul>
+<h3 id=3D"WebSketchpadAccessibilityEffortEstimation-Toolplay">Toolplay</h3>
+<ul>
+<li>Tab Order</li>
+<li>Arrow Keys to Move</li>
+</ul>
+<p>&nbsp;</p>
+<h1 id=3D"WebSketchpadAccessibilityEffortEstimation-ItemstoEstimate">Items =
+to Estimate</h1>
+<h2 id=3D"WebSketchpadAccessibilityEffortEstimation-DesignItems(potentially=
+withPOC)">Design Items (potentially with POC)</h2>
+<ul>
+<li>Tool Palette keyboard navigation (tab order, etc.).</li>
+<li>Calculator keyboard navigation (tab order, etc.)</li>
+<li>Numeric Keypad keyboard navigation (tab order, etc.)</li>
+<li>Content Authorship
+<ul>
+<li>'&amp;' in label sets keyboard shortcut -&gt; focus / tab order</li>
+<li>Is there any way to specify tab order (e.g. some other '&amp;' like enc=
+oding &amp;A7?)</li>
+</ul></li>
+</ul>
+<p>Estimate: 2 sprints for</p>
+<ul>
+<li>Preliminary designs</li>
+<li>Design Spikes</li>
+<li>Review of a sample of tools, look for patterns of use.</li>
+</ul>
+<h2 id=3D"WebSketchpadAccessibilityEffortEstimation-Spikes">Spikes</h2>
+<ul>
+<li>Spike: HTML + HTML canvas tab-order and text-to-speach
+<ul>
+<li>Create a standalone HTML page, with some HTML, and a canvas. Use javasc=
+ript to make some of the HTML elements focusable with tab order driven by j=
+s code. Can we drive tab order (including a HTML element / sub-dom element =
+to represent an object in the canvas)? And does text-to-speach work?
+<ul>
+<li><a class=3D"external-link" href=3D"https://developer.mozilla.org/en-US/=
+docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets" rel=3D"nofoll=
+ow">https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-nav=
+igable_JavaScript_widgets</a></li>
+<li>See <a class=3D"external-link" href=3D"https://github.mheducation.com/M=
+HEducation/DLE-Spike-Tabitha" rel=3D"nofollow">https://github.mheducation.c=
+om/MHEducation/DLE-Spike-Tabitha</a> for some code to steal for changing ta=
+b order</li>
+</ul></li>
+</ul></li>
+<li>Spike: Aria for buttons. Buttons are css tables, with complex-ish conte=
+nt. Can we aria them up, and make them, from an accessibility standpoint, a=
+ single focusable and speakable item.</li>
+<li>Spike: Keystroke tracker architecture. Bind to keys (seek good library)=
+. Can we detect arrow keys (and know when they are down so we can move geom=
+etry based on them). What sort of architecture do we need (e.g. do we bind =
+at the top of the dom, and distribute keystrokes to listeners, etc. or just=
+ bind, and call what we want, or ...). And how does that interact with curr=
+ent keystroke handling.<br><br>Estimate: 2 sprints</li>
+</ul>
+<h2 id=3D"WebSketchpadAccessibilityEffortEstimation-Tasks">Tasks</h2>
+<ul>
+<li>Focus order for geometric objects.
+<ul>
+<li>Tab/Shift tab</li>
+<li>Visual indicator</li>
+<li>'Enter' for activate</li>
+<li>arrow to move</li>
+<li>Estimate: 2 sprints</li>
+</ul></li>
+<li>Aria for geometric objects
+<ul>
+<li>Aria HTML for generated HTML.</li>
+<li>Sub dom with Aria for focused object.</li>
+<li>(Optional) Sub-dom for all labeled objects (with canvas rendered label)=
+.</li>
+<li>Testing including JAWS</li>
+<li>Estimate: 2 sprint</li>
+</ul></li>
+<li>Numeric Keypad
+<ul>
+<li>Keyboard accessible (can close).</li>
+<li>Tab order for elements. Design proposal: tab order is within keypad unt=
+il closed.</li>
+<li>Focused appearance</li>
+<li>Aria-ization.</li>
+<li>Testing including JAWS</li>
+<li>Estimate: 2 sprints</li>
+</ul></li>
+<li>Calculator<br>
+<ul>
+<li>Keyboard accessible (can close).</li>
+<li>Tab order for elements. Design proposal: tab order is within keypad unt=
+il closed.
+<ul>
+<li>Arrow up/down works in menus</li>
+</ul></li>
+<li>Focused appearance</li>
+<li>Aria-ization.</li>
+<li>Testing including JAWS</li>
+<li>Estimate: 2 sprints</li>
+</ul></li>
+<li>Label Dialog
+<ul>
+<li>Keyboard accessible. Label / show label / cancel / ok</li>
+<li>Tab order for elements.</li>
+<li>Focused appearance</li>
+<li>Aria-ization</li>
+<li>Testing including JAWS</li>
+<li>Estimate: 1 sprint</li>
+</ul></li>
+<li>Tool Palette
+<ul>
+<li>Proposed Design, at least for initial estimation. UI is toolbar has 3 t=
+ab-able items: undo / redo (if active), and tool list as a whole. tool list=
+ is like a menu - there is a current one, which you can up/down arrow throu=
+gh. Enter begins toolplay.</li>
+<li>Tab order, arrow keys, and enter to begin toolplay.</li>
+<li>Focused appearance (including current active tool).</li>
+<li>Aria-ization</li>
+<li>Testing including JAWS</li>
+<li>Estimate: 2 sprints</li>
+</ul></li>
+<li>Toolplay
+<ul>
+<li>Proposed Design, at least for initial estimation. Focus starts at first=
+ object, tab cycles through objects, OK/Cancel buttons last in order. Enter=
+ accepts, escape cancels.</li>
+<li>Tab order within modal toolplay state.</li>
+<li>Focused appearance</li>
+<li>Aria-ization</li>
+<li>Testing including JAWS</li>
+<li>Estimate: 2 sprints</li>
+</ul></li>
+<li>Content Authorship
+<ul>
+<li>'&amp;' label to output keyboard shortcuts.</li>
+<li>Estimate: 1 sprint</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<p>18 sprints sub-total</p>
+<h2 id=3D"WebSketchpadAccessibilityEffortEstimation-VPAT">VPAT</h2>
+<p><a href=3D"/pages/viewpage.action?pageId=3D162709926">VPAT / Accessibili=
+ty Compliance Documentation</a></p>
+<p>2 Sprints for documentation and review, and processing feedback out of t=
+hat review.</p>
+<p><br></p>
+<h2 id=3D"WebSketchpadAccessibilityEffortEstimation-IntegrationandDeploymen=
+t">Integration and Deployment</h2>
+<p>The updated library would need to be deployed on the wsp.kcptech.com rel=
+ease site, and also integrated into the ACME Habitat widget, and deployed a=
+cross Habitat projects. It would also need to be integrated into ConnectEd<=
+/p>
+<p>2 Sprints</p>
+<p><br></p>
+<h1 id=3D"WebSketchpadAccessibilityEffortEstimation-Conclusion">Conclusion<=
+/h1>
+<p>Total number of springs 18 + 2 + 2 =3D 22</p>
+<p>(22 Sprints) *&nbsp; (2 Weeks/Sprint) * (40hr/week) * (5 FTE) =3D 8,800 =
+FTE hrs</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_72267_217517145.1568240838056--
